@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corazón delatador</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif; 
+            background-color: #000000; 
+            color: #cccccc; 
+            line-height: 1.6;
+        }
+
+        .page-container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #800000; 
+            color: white;
+            text-align: center;
+            padding: 20px 0 5px 0;
+            margin-bottom: 5px;
+        }
+
+        header h1 {
+            font-size: 2.2em;
+            font-weight: 300;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            background-color: #800000; 
+            padding: 5px 0 10px 0;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            color: #eeeeee;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.95em;
+            padding: 5px 0;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #f7b7b7; 
+        }
+        
+        
+        main {
+            padding-bottom: 40px;
+        }
+
+        .content-wrapper {
+            display: flex;
+            gap: 40px;
+        }
+
+        .text-column {
+            flex: 2;
+            font-size: 1em;
+        }
+
+        .image-column {
+            flex: 1; 
+            min-width: 250px;
+            max-width: 300px;
+        }
+
+        .image-column img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .bottom-text {
+            margin-top: 30px;
+            padding-top: 10px;
+        }
+        
+        .text-column p, .bottom-text p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        
+        @media (max-width: 768px) {
+            .content-wrapper {
+                flex-direction: column; 
+                gap: 20px;
+            }
+            .image-column {
+                max-width: 100%;
+                text-align: center;
+            }
+            .image-column img {
+                max-width: 80%; 
+                margin: 0 auto;
+            }
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="page-container">
+            <h1>Corazón delatador</h1>
+        </div>
+    </header>
+    <nav>
+        <div class="page-container">
+            <ul>
+                <a href="index.html">Inicio</a>
+                <a href="Relatos.html">Relatos</a>
+                <a href="poemas.html">poe-mas</a>
+                <a href="Biografia.html">Biografia</a>
+                <a href="Galeria.html">Galería</a>
+                <a href="contacto.html">Contacto</a>
+            </ul>
+        </div>
+    </nav>
+    <main class="page-container">
+        <div class="content-wrapper">
+            <div class="text-column">
+                <p>
+                    Es cierto, soy y he estado siempre muy nervioso. Pero, ¿por qué dicen que estoy loco? La enfermedad ha agudizado mis sentidos. No los ha destruido ni embotado. Y el más agudo de todos era el oído. Oía todas las cosas del cielo y de la tierra. Muchas cosas oí en el infierno. ¿Cómo puedo estar loco, entonces? Presten atención y observen con cuánta serenidad, con cuánta tranquilidad puedo contarles toda la historia.
+                </p>
+                <p>
+                    Me es imposible decir cómo se me ocurrió la idea por primera vez, pero una vez concebida, me acosó día y noche. No tenía ningún propósito. No sentía pasión. Amaba al viejo. Jamás me había hecho ningún mal. Jamás me había insultado. Su dinero no me interesaba. Creo que era su ojo. Sí, era eso. Uno de sus ojos se parecía al de un buitre, un ojo azul pálido, y velado por una membrana. Cada vez que caía sobre mí, se me helaba la sangre. Y así, poco a poco, muy gradualmente, me fui decidiendo a quitarle la vida y librarme de su ojo para siempre. Pues no era el viejo lo que me molestaba, sino su mal de ojo. Y esa idea me atormentaba.
+                </p>
+            </div>
+            <div class="image-column">
+                <img src="img3.jpg" alt="Gráfico de un corazón rojo latiendo sobre fondo negro">
+            </div>
+        </div>
+        
+        <div class="bottom-text">
+        </div>
+    </main>
+</body>
+</html>

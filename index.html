@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Edgar Allan Poe</title>
+    <style>
+        
+        body {
+            margin: 0;
+            background: black;
+            color: white;
+            
+            font-family: "Georgia", serif; 
+        }
+
+        
+        header {
+            background: #680000;
+           
+            padding: 20px 0 10px;
+            text-align: center;
+            
+            border-bottom: none; 
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 48px;
+            letter-spacing: 2px;
+            color: #fff; 
+            font-weight: bold;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 18px;
+            color: #d8d8d8; 
+        }
+
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 25px; 
+            padding: 15px 0;
+            background: #400000; 
+            border-bottom: 2px solid #555;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 0 10px; 
+            transition: color 0.3s;
+        }
+        
+        
+        .contenedor {
+            display: flex;
+            justify-content: center;
+            gap: 30px; 
+            padding: 30px 40px;
+            max-width: 1200px; 
+            margin: 0 auto;
+        }
+
+        
+        .relato-principal {
+            
+            width: 550px; 
+            background: #444; 
+            padding: 40px;
+            border-radius: 15px; 
+            text-align: center;
+        }
+
+        .relato-principal h2 {
+            font-size: 40px;
+            margin: 0;
+            line-height: 1.1; 
+            font-weight: bold;
+        }
+        
+        
+        .relato-principal .word {
+            display: block; 
+        }
+
+        .relato-principal img {
+            
+            width: 100%; 
+            max-width: 250px;
+            margin-top: 40px; 
+            height: auto;
+            filter: grayscale(100%); 
+        }
+
+      
+        .otros {
+            width: 350px; 
+        }
+
+        .otros h3 {
+            text-align: left; 
+            font-size: 24px;
+            margin-bottom: 15px;
+            margin-left: 10px; 
+            font-weight: normal;
+        }
+
+       
+        .boton-titulo {
+            
+            background: #505050; 
+            padding: 10px 15px;
+            border-radius: 15px; 
+            display: flex;
+            align-items: center;
+            gap: 20px; 
+            margin-bottom: 10px;
+            cursor: pointer;
+            text-decoration: none; 
+            color: white;
+            font-size: 20px;
+            transition: background 0.3s;
+        }
+
+        .boton-titulo:hover {
+            background: #6a6a6a; 
+        }
+
+        .boton-titulo .icono-titulo {
+            width: 50px; 
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px; 
+        }
+
+        .boton-titulo .icono-titulo img {
+            width: 100%; 
+            height: auto;
+        }
+        
+       
+        .boton-titulo.corazon-delator .icono-titulo {
+            
+        }
+
+
+       
+        .tarjeta-link, .tarjeta {
+           
+            all: unset;
+            display: block; 
+        }
+        
+        .relato-bloqueado img, .tarjeta img {
+            all: unset;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Edgard Allan Poe</h1>
+        <p>Lo macabro y lo tétrico</p>
+    </header>
+
+    <nav>
+        <a href="Relatos.html">Relatos</a>
+        <a href="poemas.html">Poemas</a>
+        <a href="Biografia.html">Biografía</a>
+        <a href="Galeria.html">Galería</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <div class="contenedor">
+        
+        <div class="relato-principal">
+            <h2>
+                <span class="word">LA</span>
+                <span class="word">CAÍDA</span>
+                <span class="word">DE USHER</span>
+            </h2>
+                        <a href="usher.html">
+                    <img src="casa.png" alt="Casa">
+            </a>
+        </div>
+
+        <div class="otros">
+            <h3>Otros títulos</h3>
+
+            <a href="poemas.html" class="boton-titulo">
+                <span class="icono-titulo">
+                    <img src="image-removebg-preview.png" alt="Cuervo"> 
+                </span>
+                <span>El cuervo</span>
+            </a>
+
+            <a href="gato_negro.html" class="boton-titulo">
+                <span class="icono-titulo">
+                    <img src="gato1.png" alt="Gato Negro">
+                </span>
+                <span>El gato negro</span>
+            </a>
+
+            <a href="corazon_delator.html" class="boton-titulo corazon-delator">
+                <span class="icono-titulo">
+                    <img src="corazon.png" alt="Corazón Delator">
+                </span>
+                <span>El corazón delator</span>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Relatos</title>
+    <style>
+        body {
+            margin: 0;
+            background: black;
+            font-family: "Georgia", serif;
+            color: white;
+        }
+
+        
+        header {
+            background: #3a6f57;
+            padding: 25px 0 15px;
+            text-align: center;
+            border-bottom: 3px solid #1a3a2c;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 50px;
+        }
+
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 15px 0;
+            background: #275240;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        /* CONTENEDOR DE TARJETAS */
+        .contenedor {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(3, 250px);
+            justify-content: center;
+            gap: 40px;
+        }
+
+        /* TARJETAS */
+        .tarjeta {
+            width: 250px;
+            height: 320px;
+            border-radius: 10px;
+            text-align: center;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .tarjeta img {
+            width: 90%;
+            margin-top: 15px;
+        }
+
+        .tarjeta img,
+        .relato-bloqueado img{
+            width: 150px;
+            height: 355px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+
+    
+.tarjeta-link {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    
+    
+    width: 200px; 
+    padding: 10px;
+    text-align: center;
+    
+    
+    background: #111; 
+    border: 2px solid #aaa;
+    
+   
+    transition: transform 0.2s; 
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px); 
+    border-color: #fff;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h1>Relatos</h1>
+    </header>
+
+    <!-- MENÚ -->
+    <nav>
+        <a href="index.html">inicio</a>
+        <a href="poemas.html">Poemas</a>
+        <a href="Biografia.html">Biografía</a>
+        <a href="Galeria.html">Galería</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <!-- TARJETAS -->
+    <div class="contenedor">
+
+        <!-- 1: Casa Usher -->
+        <a href="usher.html" class="tarjeta-link">
+    <div class="tarjeta" style="background:#111; border:2px solid #aaa;">
+        <p class="titulo-tarjeta">La caida de la casa usher</p>
+        <img src="la_caida_de_la_casa.webp" alt="La caída de la Casa Usher">
+    </div>
+</a>
+
+        <!-- 2: Gato negro -->
+        <a href="gato_negro.html" class="tarjeta-link">
+    <div class="tarjeta" style="background:#111; border:2px solid #aaa;">
+        <p class="titulo-tarjeta">el gato negro</p>
+        <img src="el_gato_negro.jpg" alt="La caída de la Casa Usher">
+    </div>
+</a>
+
+        <!-- 3: Calle morgue -->
+        <div class="tarjeta" style="background:#393737;">
+            Calle<br>morgue
+            <img src="la_calle_morgue.png">
+        </div>
+
+        <!-- 4: Pozo y péndulo -->
+        <div class="tarjeta" style="background:#393737;">
+            Pozo y<br>péndulo
+            <img src="pozo_y_pendulo.png">
+        </div>
+
+        <!-- 5: Corazón delator -->
+      <a href="corazon_delator.html" class="tarjeta-link">
+    <div class="tarjeta" style="background:#111; border:2px solid #aaa;">
+        <p class="titulo-tarjeta">corazon delator</p>
+        <img src="corazon_delator1.webp" alt="La caída de la Casa Usher">
+    </div>
+</a>
+
+        <!-- 6: Muerte roja -->
+        <div class="tarjeta" style="background:#111;">
+            Muerte<br>roja
+            <img src="mascara_roja.png">
+        </div>
+
+        
+    </div>
+
+    
+</body>
+</html>

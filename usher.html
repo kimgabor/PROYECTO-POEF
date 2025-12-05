@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Caída de la Casa Usher</title>
+    <style>
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif; 
+            background-color: #262626;
+            color: #cccccc; 
+            line-height: 1.6;
+        }
+
+        .page-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+
+        
+        header {
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 5px;
+        }
+
+        header h1 {
+            font-size: 2.2em;
+            color: white;
+            font-weight: 300;
+            text-transform: lowercase; 
+            margin: 0;
+        }
+
+        
+        nav {
+            background-color: #444444; 
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 30px; 
+        }
+
+        nav a {
+            color: #cccccc;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            padding: 5px 0;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+       
+        .content-wrapper {
+            display: flex;
+            gap: 40px; 
+        }
+
+        .text-column {
+            flex: 2;
+            font-size: 1em;
+            padding-right: 20px;
+        }
+
+        .image-column {
+            flex: 1;
+            min-width: 250px;
+            max-width: 350px;
+        }
+
+        .image-column img {
+            width: 100%;
+            height: auto;
+            display: block;
+            
+        }
+
+        
+        .text-column p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        
+        .bottom-text {
+            margin-top: 40px;
+            padding-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .content-wrapper {
+                flex-direction: column; 
+                gap: 20px;
+            }
+            .text-column {
+                padding-right: 0;
+            }
+            .image-column {
+                max-width: 100%;
+            }
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <h1>la caída de la casa usher</h1>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Relatos.html">Relatos</a></li>
+                <li><a href="poemas.html">Poe-mas</a></li>
+                <li><a href="Biografia.html"> Biografia</a></li>
+                <li><a href="Galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            <div class="content-wrapper">
+                <div class="text-column">
+                    <p>
+                        Sumido en una melancolía que no tenía causa aparente, me encontré ante la siniestra Mansión Usher. 
+                        La primera mirada al edificio me heló el alma, no por la visión de terror, sino por la de desolación, 
+                        un aire de misterio y penumbra que emanaba de sus antiguos muros. La casa, el paisaje, el aire mismo,
+                         todo era sombrío y tétrico. Me detuve a contemplar la fachada, una obra de grandeza gótica en ruinas, 
+                         con sus ventanas como ojos vacíos que observaban un mundo en agonía. A pesar de todo, una tenue línea
+                          de fisura, casi imperceptible, se extendía desde el techo hasta la base, y me pareció un símbolo de 
+                          la grieta que se abría en la mente de mi amigo Roderick Usher. Había venido a consolar a un amigo,
+                           pero me había adentrado en un universo de sombras, donde la vida y la muerte jugaban un cruel y 
+                           silencioso drama, un drama que se desarrollaría en las entrañas de esa casa condenada, una morada 
+                           de la que ya nunca me iría siendo el mismo. La atmósfera opresiva y el silencio de muerte eran la 
+                           antesala de la tragedia que se cernía sobre los últimos descendientes de la estirpe Usher. Sentí un
+                            escalofrío al pensar en el destino que me esperaba entre esos muros...
+                    </p>
+                </div>
+                <div class="image-column">
+                    <img src="casa_user.webp" alt="Ilustración de la Casa Usher en la niebla">
+                </div>
+            </div>
+            
+            <div class="bottom-text">
+            </div>
+        </main>
+    </div>
+</body>
+</html>
